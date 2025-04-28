@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ENERGY MONITOR DASHBOARD</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>ENERGY MONITOR DASHBOARD</h1>
+
+    <div class="dashboard">
+      <!-- Gauge Card: Voltage -->
+      <div class="gauge-card">
+        <div class="gauge-container gauge--blue">
+          <p class="gauge-title">Voltage</p>
+          <div class="gauge-body">
+            <svg class="gauge-svg" viewBox="0 0 100 50">
+              <path class="gauge-track" d="M 10 50 A 40 40 0 0 1 90 50" />
+              <path
+                class="gauge-fill"
+                id="gaugeFillVoltage"
+                d="M 10 50 A 40 40 0 0 1 90 50"
+              />
+            </svg>
+            <div class="gauge-value" id="gaugeValueVoltage">0 V</div>
+          </div>
+          <div class="gauge-labels">
+            <span>0</span>
+            <span id="maxVoltage">300</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gauge Card: Current -->
+      <div class="gauge-card">
+        <div class="gauge-container gauge--green">
+          <p class="gauge-title">Current</p>
+          <div class="gauge-body">
+            <svg class="gauge-svg" viewBox="0 0 100 50">
+              <path class="gauge-track" d="M 10 50 A 40 40 0 0 1 90 50" />
+              <path
+                class="gauge-fill"
+                id="gaugeFillCurrent"
+                d="M 10 50 A 40 40 0 0 1 90 50"
+              />
+            </svg>
+            <div class="gauge-value" id="gaugeValueCurrent">0 A</div>
+          </div>
+          <div class="gauge-labels">
+            <span>0</span>
+            <span id="maxCurrent">20</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gauge Card: Power -->
+      <div class="gauge-card">
+        <div class="gauge-container gauge--yellow">
+          <p class="gauge-title">Power</p>
+          <div class="gauge-body">
+            <svg class="gauge-svg" viewBox="0 0 100 50">
+              <path class="gauge-track" d="M 10 50 A 40 40 0 0 1 90 50" />
+              <path
+                class="gauge-fill"
+                id="gaugeFillPower"
+                d="M 10 50 A 40 40 0 0 1 90 50"
+              />
+            </svg>
+            <div class="gauge-value" id="gaugeValuePower">0 W</div>
+          </div>
+          <div class="gauge-labels">
+            <span>0</span>
+            <span id="maxPower">5000</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gauge Card: Energy -->
+      <div class="gauge-card">
+        <div class="gauge-container gauge--pink">
+          <p class="gauge-title">Energy</p>
+          <div class="gauge-body">
+            <svg class="gauge-svg" viewBox="0 0 100 50">
+              <path class="gauge-track" d="M 10 50 A 40 40 0 0 1 90 50" />
+              <path
+                class="gauge-fill"
+                id="gaugeFillEnergy"
+                d="M 10 50 A 40 40 0 0 1 90 50"
+              />
+            </svg>
+            <div class="gauge-value" id="gaugeValueEnergy">0 kWh</div>
+          </div>
+          <div class="gauge-labels">
+            <span>0</span>
+            <span id="maxEnergy">100</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gauge Card: Cost -->
+      <div class="gauge-card">
+        <div class="gauge-container gauge--orange">
+          <p class="gauge-title">Cost</p>
+          <div class="gauge-body">
+            <svg class="gauge-svg" viewBox="0 0 100 50">
+              <path class="gauge-track" d="M 10 50 A 40 40 0 0 1 90 50" />
+              <path
+                class="gauge-fill"
+                id="gaugeFillCost"
+                d="M 10 50 A 40 40 0 0 1 90 50"
+              />
+            </svg>
+            <div class="gauge-value" id="gaugeValueCost">0 ₹</div>
+          </div>
+          <div class="gauge-labels">
+            <span>0</span>
+            <span id="maxCost">100</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- .dashboard -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
