@@ -120,7 +120,7 @@ This project implements a comprehensive energy monitoring system using an ESP32 
 3.  **Start Backend API Server:** `node index.js` ▶️.
 4.  **Start Frontend & Alert Server:** `node server.js` ▶️.
 5.  **Flash ESP32:** Configure and upload `energy-monitor.ino` ⚡.
-6.  **Monitor:** Check Serial Monitor, LCD 📟, Blynk (if used) <0xF0><0x9F><0xAA><0x9C>, and the Web Dashboard (`http://<frontend_server_ip>`) 🖥️.
+6.  **Monitor:** Check Serial Monitor, LCD 📟, Blynk, and the Web Dashboard (`http://<frontend_server_ip>`) 🖥️.
 
 ## 🤝 Contributing
 
